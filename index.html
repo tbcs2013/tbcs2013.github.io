@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="About | Think Big Computer Solutions" />
+    <meta property="og:image" content="/images/tbcs_logo.jpg" />
+    <link
+      rel="shortcut icon"
+      href="/images/tbcs_logo.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <title>Home | Think Big Computer Solutions</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo lg-text"> TBCS</a>
+      <nav>
+        <span><a href="/">Home</a></span>
+        <span><a href="/about">About</a></span>
+        <span><a href="/services">Services</a></span>
+        <span
+          ><a href="">Market </a><i class="bx bx-chevron-down"></i>
+          <div class="dropdown">
+            <a href=""
+              ><i class="bx bx-cart"></i
+              ><span
+                >Buy from us
+                <small
+                  >Explore our products ranging from computers, to phones, and
+                  stationery products</small
+                ></span
+              >
+            </a>
+            <a href=""
+              ><i class="bx bx-currency-notes"></i
+              ><span
+                >Sell to us
+                <small>We buy computers, phones, printers, etc</small></span
+              ></a
+            >
+          </div></span
+        >
+
+        <span
+          ><a href="">Courses </a
+          ><i class="bx bx-chevron-down">
+            <div class="dropdown">
+              <a href=""
+                ><i class="bx bx-computer"></i>
+                <span
+                  >Computer Knowledge
+                  <small
+                    >Learn how to use Word, Excel, PowerPoint, and other
+                    computer applications</small
+                  ></span
+                ></a
+              >
+              <a href=""
+                ><i class="bx bx-code-alt"></i>
+                <span
+                  >Web Development
+                  <small
+                    >Learn how to create dynamic and responsive websites</small
+                  ></span
+                ></a
+              >
+              <a href="">
+                <i class="bx bx-shapes"></i>
+                <span
+                  >Graphic Designing
+                  <small
+                    >Learn how to create dynamic and responsive websites</small
+                  ></span
+                ></a
+              >
+              <a href=""
+                ><i class="bx bx-joystick"></i>
+                <span
+                  >Drone Piloting
+                  <small>Learn how to fly and film with a dron</small></span
+                ></a
+              >
+            </div>
+          </i></span
+        >
+      </nav>
+      <div class="min-nav">
+        <span><a href="">Contact</a></span>
+        <span class="cta-btn"><a href="">Get a quote</a></span>
+
+        <button id="menuOpen"><i class="bx bx-menu-wide"></i></button>
+        <button id="menuClose"><i class="bx bx-x"></i></button>
+      </div>
+      <!-- calculte header height using js and set as a variable in css -->
+      <script>
+        const headerContainer = document.querySelector("header");
+        const headerHeight = headerContainer.offsetHeight;
+        document.documentElement.style.setProperty(
+          "--header-height",
+          `${headerHeight}px`
+        );
+      </script>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="lg-text">Think Big <br />Computer Solutions</h1>
+          <p>
+            Providing comprehensive IT and Electronics solutions since 2008.
+            From data management systems to equipment restoration, our
+            experienced team delivers reliable and affordable services for
+            businesses, government, and non-profits
+          </p>
+          <a href="" class="cta-btn">Explore Our Services</a>
+        </div>
+        <div class="hero-img"><img src="images/hero.svg" alt="" /></div>
+      </section>
+      <!-- <section class="work-numbers">
+        <div class="wn-item">5000+ <span>Projects</span></div>
+        <div class="wn-item">10yrs+ <span>Experience</span></div>
+        <div class="wn-item">5000+ <span>Projects</span></div>
+        <div class="wn-item">10yrs+ <span>Experience</span></div>
+      </section> -->
+      <section class="wwd">
+        <h2>Think Big, Achieve More</h2>
+        <h3>Exceptional ICT Service Delivery in Different Fields</h3>
+        <div class="services">
+          <div class="service">
+            <h3><i class="bx bx-database"></i> Data Management Solutions</h3>
+            <p>
+              We design and deploy custom data systems that help organizations
+              manage information efficiently and securely.
+            </p>
+            <a href=""><i class="bx bx-arrow-right"></i>View Service</a>
+            <div class="service-img">
+              <img src="images/data.png" alt="" />
+            </div>
+          </div>
+          <div class="service">
+            <h3>
+              <i class="bx bx-code-alt"></i> Web Development & Software
+              Solutions
+            </h3>
+            <p>
+              We build modern, responsive websites and powerful desktop
+              applications that support your goals.
+            </p>
+            <a href=""><i class="bx bx-arrow-right"></i>View Service</a>
+            <div class="service-img">
+              <img src="images/dev.png" alt="" />
+            </div>
+          </div>
+          <div class="service">
+            <h3>
+              <i class="bx bx-network-chart"></i> Hardware & Networking Services
+            </h3>
+            <p>
+              From computer repairs and hardware upgrades to LAN/WAN
+              installations and server setups, we ensure your systems run
+              smoothly and efficiently.
+            </p>
+            <a href=""><i class="bx bx-arrow-right"></i>View Service</a>
+            <div class="service-img">
+              <img src="images/networking.png" alt="" />
+            </div>
+          </div>
+          <div class="service">
+            <h3>
+              <i class="bx bx-desktop"></i> Equipment Restoration & Upgrades
+            </h3>
+            <p>
+              We restore and upgrade aging electronic systems to extend their
+              lifespan and functionality.
+            </p>
+            <a href=""><i class="bx bx-arrow-right"></i>View Service</a>
+            <div class="service-img">
+              <img src="images/upgrading.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <a href="" class="border-btn">See all services</a>
+      </section>
+
+      <section class="wcu">
+        <h2>Why Think Big Computer Solutions?</h2>
+
+        <div class="wcu-container">
+          <div class="img">
+            <img src="images/log-in-girl.svg" alt="" />
+          </div>
+          <div class="text">
+            <h3>
+              Tech problems simplified—so you can focus on what really matters.
+            </h3>
+            <p>
+              At TBCS, we pair decades of hands-on ICT expertise with a
+              customer-first mindset. Whether you’re a sole proprietor or a
+              government agency, our certified engineers deliver fast, reliable
+              service at prices that respect your budget. From large-scale data
+              systems to emergency hardware repairs, we treat every project with
+              the same care we’d expect for our own.
+            </p>
+            <div class="btn-container">
+              <a href="" class="cta-btn">Get a quote</a>
+              <a href="" class="border-btn">Explore products</a>
+            </div>
+            <div class="qualities-container">
+              <div class="quality">
+                <i class="bx bx-brain"></i> Proffessional
+              </div>
+              <div class="quality"><i class="bx bx-shield"></i> Reliable</div>
+              <div class="quality">
+                <i class="bx bx-piggy-bank"></i> Affordable
+              </div>
+              <div class="quality">
+                <i class="bx bx-lightbulb-alt-2"></i> Innovative
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="auto-slideshow">
+        <div class="container">
+          <img
+            src="images/Acer_Inc.-Logo.wine.png"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 1"
+          />
+          <img
+            src="images/Advanced_Micro_Devices-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 2"
+          />
+          <img
+            src="images/Apple_Inc.-White-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 3"
+          />
+          <img
+            src="images/Asus-Logo.wine.png"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 4"
+          />
+          <img
+            src="images/Dell-Logo.wine.png"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 5"
+          />
+          <img
+            src="images/Huawei-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 6"
+          />
+          <img
+            src="images/hp.jpg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 7"
+          />
+          <img
+            src="images/Lenovo-Logo-scaled.webp"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 8"
+          />
+          <img
+            src="images/Microsoft_Mobile-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 9"
+          />
+          <img
+            src="images/Motorola_Mobility-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 10"
+          />
+
+          <img
+            src="images/nokia-refreshed-logo-1_1.jpg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 11"
+          />
+          <img
+            src="images/Nvidia-Horizontal-Logo.wine.svg"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 12"
+          />
+          <img
+            src="images/Samsung_Orig_Wordmark_WHITE_RGB.png"
+            alt="Top-quality computers, phones & accessories—all under one roof"
+            style="--position: 13"
+          />
+        </div>
+      </section>
+      <section class="market">
+        <h2>Spend Small, Get Big</h2>
+        <h3>
+          Top-quality computers, phones & accessories <br />—all under one roof
+        </h3>
+        <p>
+          Our curated selection of desktops, laptops and mobile devices comes
+          from leading brands you trust. Every purchase is backed by our own
+          in-house warranty and a full suite of after-sales support, so you can
+          shop knowing you’ve got TBCS in your corner
+        </p>
+        <div class="products-container">
+          <div class="product">
+            <img
+              src="images/networking.png"
+              alt="Think Big Computer Solutions: computers"
+            />
+            <h2>
+              Computers
+              <ul>
+                <li>Pre-configured PCs & laptops ready to go</li>
+              </ul>
+            </h2>
+          </div>
+          <div class="product">
+            <img
+              src="images/networking.png"
+              alt="Think Big Computer Solutions: computers"
+            />
+            <h2>
+              Mobile Phones
+              <ul>
+                <li>Latest smartphones and accessories</li>
+              </ul>
+            </h2>
+          </div>
+          <div class="product">
+            <img
+              src="images/networking.png"
+              alt="Think Big Computer Solutions: computers"
+            />
+            <h2>
+              Accessories
+              <ul>
+                <li>Competitive pricing & bulk discounts available</li>
+              </ul>
+            </h2>
+          </div>
+          <div class="product">
+            <img
+              src="images/networking.png"
+              alt="Think Big Computer Solutions: computers"
+            />
+            <h2>
+              Stationery & More
+              <ul>
+                <li>Stationery, peripherals & networking gear</li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+        <a href="" class="border-btn">Shop now!</a>
+      </section>
+      <section class="courses">
+        <div class="text">
+          <h2>Get Certified, Get Better</h2>
+          <h3>Practical technical training led by industry experts</h3>
+          <p>
+            Gain the skills employers are looking for in our hands-on
+            courses—from basic computer literacy to advanced web development,
+            graphic design and drone piloting. Our small-class approach,
+            flexible schedules and accredited certificates ensure you learn
+            quickly and boost your career prospects.
+          </p>
+          <a href="" class="cta-btn">Enroll now</a>
+        </div>
+        <div class="img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VhBH0XnGnD7umfXv4c3MhMrYL0O0CDEC1Q&s"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2>Don’t just take our word for it</h2>
+        <h3>Real solutions. Real impact.</h3>
+        <p>
+          From national government agencies to private startups, our portfolio
+          showcases a broad spectrum of successful ICT projects. Whether it's
+          setting up a secure network, supplying bulk computer equipment, or
+          delivering technical training, we consistently exceed expectations.
+          Here are some of our clients and their stories.
+        </p>
+        <div class="client-stories swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VhBH0XnGnD7umfXv4c3MhMrYL0O0CDEC1Q&s"
+                alt=""
+              />
+              <div>
+                <i class="bx bx-quote-left"></i>
+                <p>
+                  We've worked with Think Big Computer Solutions on several
+                  projects, and their expertise and professionalism have been
+                  invaluable. They have consistently delivered high-quality
+                  solutions that meet our needs and exceed our expectations.
+                </p>
+                <h4>-John Doe, CEO of Example Company</h4>
+              </div>
+            </div>
+            <div class="testimonial swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VhBH0XnGnD7umfXv4c3MhMrYL0O0CDEC1Q&s"
+                alt=""
+              />
+              <div>
+                <i class="bx bx-quote-left"></i>
+
+                <p>
+                  We've worked with Think Big Computer Solutions on several
+                  projects, and their expertise and professionalism have been
+                  invaluable. They have consistently delivered high-quality
+                  solutions that meet our needs and exceed our expectations.
+                </p>
+                <h4>-John Doe, CEO of Example Company</h4>
+              </div>
+            </div>
+            <div class="testimonial swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VhBH0XnGnD7umfXv4c3MhMrYL0O0CDEC1Q&s"
+                alt=""
+              />
+              <div>
+                <i class="bx bx-quote-left"></i>
+                <p>
+                  We've worked with Think Big Computer Solutions on several
+                  projects, and their expertise and professionalism have been
+                  invaluable. They have consistently delivered high-quality
+                  solutions that meet our needs and exceed our expectations.
+                </p>
+                <h4>-John Doe, CEO of Example Company</h4>
+              </div>
+            </div>
+            <div class="testimonial swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VhBH0XnGnD7umfXv4c3MhMrYL0O0CDEC1Q&s"
+                alt=""
+              />
+              <div>
+                <i class="bx bx-quote-left"></i>
+                <p>
+                  We've worked with Think Big Computer Solutions on several
+                  projects, and their expertise and professionalism have been
+                  invaluable. They have consistently delivered high-quality
+                  solutions that meet our needs and exceed our expectations.
+                </p>
+                <h4>-John Doe, CEO of Example Company</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="text">
+          <h2>Ready to take the next step?</h2>
+          <h3>Contact us today to find out how we can help you.</h3>
+          <p>
+            Let's work together to create a solution that meets your unique
+            needs and exceeds your expectations. We look forward to working with
+            you!
+          </p>
+          <div class="contact-container">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="form"
+              class="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="afad1c7a-6a14-41d5-897e-36891be3c85a"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Message from tbcs.com"
+              />
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <input type="tel" name="Phone" placeholder="Phone" required />
+              <select name="" id="" required>
+                <option disabled selected>-- Subject --</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <textarea name="Message" placeholder="Message"></textarea>
+              <label class="checkbox">
+                <input type="checkbox" required />
+                <span class="checkmark"></span>
+                I agree that the website can contact me through the contact
+                details provided
+              </label>
+              <button type="submit" id="submit-btn">Send</button>
+            </form>
+            <div class="contact-details">
+              <h4><i class="bx bx-phone"></i>Phone</h4>
+              <p>
+                <a href="tel:+265999475588">+265 999 475 588</a> <br /><a
+                  href="tel:+265881041955"
+                  >+265 881 041 955</a
+                >
+              </p>
+              <h4><i class="bx bx-at"></i>Email</h4>
+              <p>
+                <a href="tbcompusolutions@gmail.com"
+                  >tbcompusolutions@gmail.com</a
+                >
+              </p>
+              <h4><i class="bx bx-envelope"></i>Postal Address</h4>
+              <p>
+                Think Big Computer Solutions <br />
+                P.O Box 2409 <br />
+                Lilongwe, Malawi
+              </p>
+              <h4><i class="bx bx-location"></i>Location</h4>
+              <p>Nkuyu St, Area 49 Shire, Lilongwe</p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d600.6614844338555!2d33.738835!3d-13.930582000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1921d50e7b756697%3A0x595d831ae3c66a1f!2sThink%20Big%20Computer%20Solutions!5e1!3m2!1sen!2smw!4v1749814354598!5m2!1sen!2smw"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-about">
+        <img
+          src="/images/tbcs_logo.jpg"
+          alt="Think Big Computer Solutions Logo"
+          style="height: 100px"
+        />
+        <p style="max-width: 600px">
+          Think Big Computer Solutions is a leading provider of computer
+          solutions for businesses in Malawi. We offer a wide range of computer
+          hardware and software products to help businesses and organizations
+          stay up-to-date with the latest technologies and tools.
+        </p>
+      </div>
+      <div class="links-container">
+        <!-- Link Group: Newsletter -->
+        <div class="link-grp newsletter-form">
+          <h2>Newsletter</h2>
+          <p>Get the latest news, updates, and offers from us</p>
+          <form action="">
+            <input type="email" placeholder="Email" name="email" required />
+            <button type="submit"><i class="bx bx-send-alt-2"></i></button>
+          </form>
+        </div>
+
+        <div class="link-grp">
+          <h2>Contact Us</h2>
+          <p>
+            <a href="tel:+265999475588">+265 999 475 588</a>
+            <a href="tel:+265881041955">+265 881 041 955</a>
+          </p>
+          <p>
+            <a href="mailto:tbcompusolutions@gmail.com"
+              >tbcompusolutions@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="link-grp">
+          <h2>Write to us</h2>
+          <p>
+            Think Big Computer Solutions<br />
+            P.O Box 2409<br />
+            Area 49 Shire, Nkuyu St <br />
+            Lilongwe, Malawi
+          </p>
+        </div>
+      </div>
+      <div class="social-medias">
+        <a
+          href="http://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a
+          href="http://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a
+          href="http://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="http://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="http://www.whatsapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a
+          href="http://www.telegram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-tiktok"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        <!-- get current year -->
+
+        &copy; 2013 - <span id="year"></span> Think Big Computer Solutions. All
+        rights reserved.
+        <script>
+          document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    //initialize swiper
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        // type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      effect: "slide",
+      grabCursor: true,
+      autoplay: {
+        delay: 5000, // 5 seconds between slides
+        disableOnInteraction: false, // Keeps autoplay after manual swipe
+      },
+      loop: true,
+    });
+
+    // form submission handler
+    const form = document.getElementById("form");
+    const result = document.getElementById("submit-btn");
+
+    form.addEventListener("submit", function (e) {
+      const formData = new FormData(form);
+      e.preventDefault();
+      var object = {};
+      formData.forEach((value, key) => {
+        object[key] = value;
+      });
+      var json = JSON.stringify(object);
+      result.innerHTML = "Please wait...";
+      result.disabled = true;
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = json.message;
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.innerHTML = "Send";
+            result.disabled = false;
+          }, 5000);
+        });
+    });
+  </script>
+  <script src="main.js"></script>
+</html>
