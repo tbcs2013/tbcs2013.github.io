@@ -113,6 +113,9 @@ nav span a,
   font-size: 18px;
   font-weight: 500;
 }
+nav span:last-child {
+  display: none;
+}
 
 header .bx-chevron-down {
   font-size: 22px;
@@ -473,6 +476,10 @@ footer .copyright {
   .min-nav span {
     padding: 5px 10px;
   }
+  nav span:last-child {
+  display: flex;
+  }
+}
   header .bx-chevron-down {
     display: none;
   }

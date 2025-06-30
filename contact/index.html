@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Home | Think Big Computer Solutions" />
+    <meta property="og:image" content="/images/tbcs_logo.jpg" />
+    <meta
+      name="description"
+      content="Think Big Computer Solutions is a leading provider of computer solutions for businesses in Malawi. We offer a wide range of computer hardware and software products to help businesses and organizations stay up-to-date with the latest technologies and tools."
+    />
+    <meta
+      name="keywords"
+      content="Think Big Computer Solutions, TBCS, computer solutions, Malawi, computer hardware, software products, IT services"
+    />
+    <meta name="author" content="Think Big Computer Solutions" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="/images/tbcs_logo.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <title>Contact | Think Big Computer Solutions</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo lg-text"> TBCS</a>
+      <nav>
+        <span><a href="/">Home</a></span>
+        <span><a href="/about">About</a></span>
+        <span><a href="/services">Services</a></span>
+        <span
+          ><a href="">Market </a><i class="bx bx-chevron-down"></i>
+          <div class="dropdown">
+            <a href=""
+              ><i class="bx bx-cart"></i
+              ><span
+                >Buy from us
+                <small
+                  >Explore our products ranging from computers, to phones, and
+                  stationery products</small
+                ></span
+              >
+            </a>
+            <a href=""
+              ><i class="bx bx-currency-notes"></i
+              ><span
+                >Sell to us
+                <small>We buy computers, phones, printers, etc</small></span
+              ></a
+            >
+          </div></span
+        >
+
+        <span
+          ><a href="">Courses </a
+          ><i class="bx bx-chevron-down">
+            <div class="dropdown">
+              <a href=""
+                ><i class="bx bx-computer"></i>
+                <span
+                  >Computer Knowledge
+                  <small
+                    >Learn how to use Word, Excel, PowerPoint, and other
+                    computer applications</small
+                  ></span
+                ></a
+              >
+              <a href=""
+                ><i class="bx bx-code-alt"></i>
+                <span
+                  >Web Development
+                  <small
+                    >Learn how to create dynamic and responsive websites</small
+                  ></span
+                ></a
+              >
+              <a href="">
+                <i class="bx bx-shapes"></i>
+                <span
+                  >Graphic Designing
+                  <small
+                    >Learn how to create dynamic and responsive websites</small
+                  ></span
+                ></a
+              >
+              <a href=""
+                ><i class="bx bx-joystick"></i>
+                <span
+                  >Drone Piloting
+                  <small>Learn how to fly and film with a dron</small></span
+                ></a
+              >
+            </div>
+          </i></span
+        >
+        <span><a href="/contact">Contact</a></span>
+      </nav>
+      <div class="min-nav">
+        <span><a href="">Contact</a></span>
+        <span class="cta-btn"><a href="">Get a quote</a></span>
+
+        <button id="menuOpen"><i class="bx bx-menu-wide"></i></button>
+        <button id="menuClose"><i class="bx bx-x"></i></button>
+      </div>
+      <!-- calculte header height using js and set as a variable in css -->
+      <script>
+        const headerContainer = document.querySelector("header");
+        const headerHeight = headerContainer.offsetHeight;
+        document.documentElement.style.setProperty(
+          "--header-height",
+          `${headerHeight}px`
+        );
+      </script>
+    </header>
+    <main>
+      <section class="contact">
+        <div class="text">
+          <h2>Ready to take the next step?</h2>
+          <h3>Contact us today to find out how we can help you.</h3>
+          <p>
+            Let's work together to create a solution that meets your unique
+            needs and exceeds your expectations. We look forward to working with
+            you!
+          </p>
+          <div class="contact-container">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="form"
+              class="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="afad1c7a-6a14-41d5-897e-36891be3c85a"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Message from tbcs.com"
+              />
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <input type="tel" name="Phone" placeholder="Phone" required />
+              <select name="" id="" required>
+                <option disabled selected>-- Subject --</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <textarea name="Message" placeholder="Message"></textarea>
+              <label class="checkbox">
+                <input type="checkbox" required />
+                <span class="checkmark"></span>
+                I agree that the website can contact me through the contact
+                details provided
+              </label>
+              <button type="submit" id="submit-btn">Send</button>
+            </form>
+            <div class="contact-details">
+              <h4><i class="bx bx-phone"></i>Phone</h4>
+              <p>
+                <a href="tel:+265999475588">+265 999 475 588</a> <br /><a
+                  href="tel:+265881041955"
+                  >+265 881 041 955</a
+                >
+              </p>
+              <h4><i class="bx bx-at"></i>Email</h4>
+              <p>
+                <a href="tbcompusolutions@gmail.com"
+                  >tbcompusolutions@gmail.com</a
+                >
+              </p>
+              <h4><i class="bx bx-envelope"></i>Postal Address</h4>
+              <p>
+                Think Big Computer Solutions <br />
+                P.O Box 2409 <br />
+                Lilongwe, Malawi
+              </p>
+              <h4><i class="bx bx-location"></i>Location</h4>
+              <p>Nkuyu St, Area 49 Shire, Lilongwe</p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d600.6614844338555!2d33.738835!3d-13.930582000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1921d50e7b756697%3A0x595d831ae3c66a1f!2sThink%20Big%20Computer%20Solutions!5e1!3m2!1sen!2smw!4v1749814354598!5m2!1sen!2smw"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-about">
+        <img
+          src="/images/tbcs_logo.jpg"
+          alt="Think Big Computer Solutions Logo"
+          style="height: 100px"
+        />
+        <p style="max-width: 600px">
+          Think Big Computer Solutions is a leading provider of computer
+          solutions for businesses in Malawi. We offer a wide range of computer
+          hardware and software products to help businesses and organizations
+          stay up-to-date with the latest technologies and tools.
+        </p>
+      </div>
+      <div class="links-container">
+        <!-- Link Group: Newsletter -->
+        <div class="link-grp newsletter-form">
+          <h2>Newsletter</h2>
+          <p>Get the latest news, updates, and offers from us</p>
+          <form action="">
+            <input type="email" placeholder="Email" name="email" required />
+            <button type="submit"><i class="bx bx-send-alt-2"></i></button>
+          </form>
+        </div>
+
+        <div class="link-grp">
+          <h2>Contact Us</h2>
+          <p>
+            <a href="tel:+265999475588">+265 999 475 588</a>
+            <a href="tel:+265881041955">+265 881 041 955</a>
+          </p>
+          <p>
+            <a href="mailto:tbcompusolutions@gmail.com"
+              >tbcompusolutions@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="link-grp">
+          <h2>Write to us</h2>
+          <p>
+            Think Big Computer Solutions<br />
+            P.O Box 2409<br />
+            Area 49 Shire, Nkuyu St <br />
+            Lilongwe, Malawi
+          </p>
+        </div>
+      </div>
+      <div class="social-medias">
+        <a
+          href="http://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a
+          href="http://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a
+          href="http://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="http://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="http://www.whatsapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a
+          href="http://www.telegram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="bx bxl-tiktok"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        <!-- get current year -->
+
+        &copy; 2013 - <span id="year"></span> Think Big Computer Solutions. All
+        rights reserved.
+        <script>
+          document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+      </p>
+    </footer>
+  </body>
+
+  <!-- Swiper JS -->
+
+  <script>
+    // form submission handler
+    const form = document.getElementById("form");
+    const result = document.getElementById("submit-btn");
+
+    form.addEventListener("submit", function (e) {
+      const formData = new FormData(form);
+      e.preventDefault();
+      var object = {};
+      formData.forEach((value, key) => {
+        object[key] = value;
+      });
+      var json = JSON.stringify(object);
+      result.innerHTML = "Please wait...";
+      result.disabled = true;
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = json.message;
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.innerHTML = "Send";
+            result.disabled = false;
+          }, 5000);
+        });
+    });
+  </script>
+  <script src="main.js"></script>
+</html>
