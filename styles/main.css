@@ -45,7 +45,6 @@ body {
 
 /* header navigation styles */
 header {
-  z-index: 20;
   position: sticky;
   top: 0;
   left: 0;
@@ -59,6 +58,7 @@ header {
 }
 
 header.scrolled {
+  z-index: 10;
   background: var(--nav-bg-scrolled);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px var(--blue-shadow);
@@ -112,9 +112,6 @@ nav span a,
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-}
-nav span:last-child {
-  display: none;
 }
 
 header .bx-chevron-down {
@@ -476,10 +473,6 @@ footer .copyright {
   .min-nav span {
     padding: 5px 10px;
   }
-  nav span:last-child {
-  display: flex;
-  }
-}
   header .bx-chevron-down {
     display: none;
   }
